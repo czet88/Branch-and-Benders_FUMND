@@ -1,9 +1,9 @@
-LIB = ../../../../encs/pkg/cplex-12.7.1/root/cplex
+LIB = ../../../../../encs/pkg/cplex-12.7.1/root/cplex
 CXX=gcc -O2
 CPLXST=-DIL_STD  -L$(LIB)/lib/x86-64_linux/static_pic -lcplex -lm -lpthread 
 LIB2=-I$(LIB)/include/
 OBJ= fundamentals.o solve_MIP.o  solve_MasterMC.o solve_Subproblem.o MetaheuristicWarmStart.o Preprocess.o
-NAME=Ben
+NAME=../Ben
 
 $(NAME) : $(OBJ)
 	$(CXX) -I$(LIB)/include/ilcplex $(OBJ) -o $(NAME) $(CPLXST)

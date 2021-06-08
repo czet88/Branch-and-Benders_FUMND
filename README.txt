@@ -2,13 +2,18 @@
 from the paper-"Exact algorithms based on Benders decomposition for the multicommodity uncapacitated fixed-charge network design"
 
 Step 0
-The Makefile must be updated to include the path to CPLEX in your local computer.
+The Makefile found in the src folder must be updated to include the path to CPLEX in your local computer.
 
 Step 1
-Copy codes into your computer and type make to generate the Ben executable and other programming objects
+LINUX: Clone the repo into your computer and then run ./build.sh (After having updated your CPLEX path in the makefile)
+
+Windows: A Visual Studio 2019 Community project is included in the repo. 
+You can open it and use it directly. You will still need to add your paths in the project settings.
 
 Step 2
-To execute, type "./Ben $NAME_OF_INPUT  $NAME_OF_OUTPUT"
+LINUX: To execute, type "./Ben $NAME_OF_INPUT  $NAME_OF_OUTPUT"
+
+Windows: Run using Ctrl+F5
 
 /*********************************/
 Structure of the input file
